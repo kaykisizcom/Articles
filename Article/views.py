@@ -107,7 +107,7 @@ def profile(request):
 @csrf_exempt
 def new_message(request):
     user = User.objects.get(user=request.user)
-    title =
+    # title =
     return render_to_response('profile.html', locals(), context_instance=RequestContext(request))
 
 
